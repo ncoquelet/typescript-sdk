@@ -231,7 +231,7 @@ export async function addIndexer({
   consola.info(
     `Before running the indexer, run ${cyan(`${options.packageManager} install`)}${
       language === "typescript"
-        ? " & " + cyan(`${options.packageManager} run prepare`)
+        ? cyan(` && ${options.packageManager} run prepare`)
         : ""
     }`,
   );
